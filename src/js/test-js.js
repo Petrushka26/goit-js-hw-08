@@ -1,4 +1,3 @@
-console.log(324234);
 
 import throttle from 'lodash.throttle';
 
@@ -28,10 +27,8 @@ function onFormSubmit(e) {
 
 function reloadTextarea() {
   const savedMessage = JSON.parse(localStorage.getItem(STORAGE_KEY));
-  console.log(refs.input)
   if (savedMessage) {
     refs.input.value = savedMessage.email ?? "";
     refs.textarea.value = savedMessage.message ?? "";
   }
 }
-console.log(324234);
